@@ -6,7 +6,8 @@
   "scripts": {
     "start": "coffee -c *.coffee && uglifyjs diecut.js > diecut.min.js",
     "debug": "npm start && node --debug-brk test.js",
-    "test": "npm start && node test.js | faucet"
+    "test": "npm start && node test.js | faucet",
+    "coverage": "npm start && istanbul cover test.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "coffee-script": "^1.9.1",
     "faucet": "0.0.1",
+    "istanbul": "^0.3.6",
     "tape": "^3.5.0",
     "uglify-js": "^2.4.16"
   }
