@@ -1,0 +1,24 @@
+{
+  "name": "diecut",
+  "version": "0.0.1",
+  "homepage": "https://github.com/lo5/diecut",
+  "main": "diecut.min.js",
+  "authors": [
+    "Prithvi Prabhu <prithvi.prabhu@gmail.com>"
+  ],
+  "description": "Featherweight HTML builder-builder",
+  "keywords": [
+    "HTML",
+    "template",
+    "DSL"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test.js",
+    "diecut.coffee",
+    "package.json"
+  ]
+}
