@@ -7,7 +7,8 @@
     "start": "coffee -c *.coffee && uglifyjs diecut.js > diecut.min.js",
     "debug": "npm start && node --debug-brk test.js",
     "test": "npm start && node test.js | faucet",
-    "coverage": "npm start && istanbul cover test.js"
+    "coverage": "npm start && istanbul cover test.js",
+    "coveralls": "npm start && istanbul cover test.js --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   "homepage": "https://github.com/lo5/diecut",
   "devDependencies": {
     "coffee-script": "^1.9.1",
+    "coveralls": "^2.11.2",
     "faucet": "0.0.1",
     "istanbul": "^0.3.6",
     "tape": "^3.5.0",
