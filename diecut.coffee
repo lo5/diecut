@@ -1,7 +1,5 @@
 argsRegExp = /\$(\d+)/g
 
-isArray = (a) -> a and a.constructor is Array
-
 compileBuilder = (template) ->
   template = template.trim()
 
