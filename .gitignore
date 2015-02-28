@@ -2,6 +2,9 @@
 logs
 *.log
 
+*.swp
+test.js
+
 # Runtime data
 pids
 *.pid

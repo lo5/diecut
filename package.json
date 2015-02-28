@@ -1,0 +1,32 @@
+{
+  "name": "diecut",
+  "version": "0.0.1",
+  "description": "Featherweight HTML builder-builder",
+  "main": "diecut.min.js",
+  "scripts": {
+    "start": "coffee -c *.coffee && uglifyjs diecut.js > diecut.min.js",
+    "debug": "npm start && node --debug-brk test.js",
+    "test": "npm start && node test.js | faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lo5/diecut.git"
+  },
+  "keywords": [
+    "HTML",
+    "template",
+    "DSL"
+  ],
+  "author": "Prithvi Prabhu <prithvi.prabhu@gmail.com> (http://lofi.in/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lo5/diecut/issues"
+  },
+  "homepage": "https://github.com/lo5/diecut",
+  "devDependencies": {
+    "coffee-script": "^1.9.1",
+    "faucet": "0.0.1",
+    "tape": "^3.5.0",
+    "uglify-js": "^2.4.16"
+  }
+}
